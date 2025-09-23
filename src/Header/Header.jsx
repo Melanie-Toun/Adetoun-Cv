@@ -21,7 +21,6 @@ function Header() {
         localStorage.setItem('theme', selectedTheme); 
     };
 
-    // Define colors for each theme
     const themeColors = {
         light: { background: '#837c7c', color: 'black' },
         dark: { background: 'black', color: 'white' },
@@ -34,18 +33,22 @@ function Header() {
 
     return (
         <div id="header" className={theme}>
-            {/* Mobile Menu Overlay */}
             {isMenuOpen && <div className="menu-overlay active" onClick={closeMenu}></div>}
             
             <div className="container">
                 <nav>
                     <img src="images/Goodluck.png" className="logo" alt="Logo" />
                     
-                    {/* Mobile Menu Icon - This replaces both hamburger and close icon */}
-                    <i 
-                        className={`menu-icon fa-regular ${isMenuOpen ? 'fa-circle-xmark' : 'fa-bars'}`}
+                    {/* Modern Hamburger Button */}
+                    <button 
+                        className={`menu-icon ${isMenuOpen ? 'active' : ''}`}
                         onClick={toggleMenu}
-                    ></i>
+                        aria-label="Toggle menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
                     <ul className={isMenuOpen ? 'active' : ''}>
                         <li>
@@ -94,7 +97,7 @@ function Header() {
                             <h6 className="floating-toun">Toun</h6>
                         </span> 
                         <br /> 
-                        based in the UK
+                        ready to work...
                     </h1>
                 </div>
             </div>
