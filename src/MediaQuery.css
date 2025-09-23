@@ -1,0 +1,100 @@
+/* MediaQueries.css */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/abg1.png);
+        background-size: cover;
+        height: 80vh;
+    }
+
+    .header-text {
+        margin-top: 50%;
+        font-size: 14px;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    nav .fa-regular {
+        display: block;
+        font-size: 18px;
+        padding-left: 25px;
+    }
+
+    nav ul {
+        background: #ff5757;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 20px;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .services-list div {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-title {
+        font-size: 32px;
+    }
+
+    .tab-links {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .tab-contents ul li span {
+        font-size: 12px;
+    }
+
+    .contact-left {
+        flex-basis: 100%;
+    }
+
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}

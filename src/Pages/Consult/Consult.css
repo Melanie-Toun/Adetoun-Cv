@@ -1,0 +1,145 @@
+/* Default Light Mode Styles */
+body.light .consult {
+    background: white;
+    color: #333;
+}
+
+body.light .consult > div:last-child {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light .consult b {
+    color: #333;
+}
+
+/* Light Mode Variants */
+body.light.blue .consult {
+    background: #add8e6; /* Light Blue */
+}
+
+body.light.green .consult {
+    background: #d4edda; /* Light Green */
+}
+
+body.light.red .consult {
+    background: #f8d7da; /* Light Red */
+}
+
+body.light.purple .consult {
+    background: #e6ccf5; /* Light Purple */
+}
+
+body.light.yellow .consult {
+    background: #fff3cd; /* Light Yellow */
+}
+
+/* Dark Mode Styles */
+body.dark .consult {
+    background: black;
+    color: #e0e0e0;
+}
+
+body.dark .consult > div:last-child {
+    background-color: rgba(34, 34, 34, 0.8);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .consult b {
+    color: #e0e0e0;
+}
+
+/* Dark Mode Variants */
+body.dark.blue .consult {
+    background: #001f3f; /* Dark Blue */
+}
+
+body.dark.green .consult {
+    background: #004d00; /* Dark Green */
+}
+
+body.dark.red .consult {
+    background: #660000; /* Dark Red */
+}
+
+body.dark.purple .consult {
+    background: #4B0082; /* Dark Purple */
+}
+
+body.dark.yellow .consult {
+    background: #7c7c00; /* Dark Yellow */
+}
+
+/* Shared Styles */
+.consult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.consult-vid {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.consult-vid video {
+    width: 100%;
+    display: block;
+}
+
+.consult > div:last-child {
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    animation: fadeIn 1s ease-out;
+}
+
+.consult p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    animation: slideIn 0.5s ease-out;
+}
+
+.consult b {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .consult {
+        padding: 1rem;
+    }
+
+    .consult-vid {
+        width: 95%;
+    }
+
+    .consult > div:last-child {
+        padding: 1.5rem;
+    }
+
+    .consult b {
+        font-size: 1.3rem;
+    }
+}

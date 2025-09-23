@@ -1,0 +1,145 @@
+/* Default Light Mode Styles */
+body.light .digmkt {
+    background: white;
+    color: #333;
+}
+
+body.light .digmkt > div:last-child {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light .digmkt b {
+    color: #333;
+}
+
+/* Light Mode Variants */
+body.light.blue .digmkt {
+    background: #add8e6; /* Light Blue */
+}
+
+body.light.green .digmkt {
+    background: #d4edda; /* Light Green */
+}
+
+body.light.red .digmkt {
+    background: #f8d7da; /* Light Red */
+}
+
+body.light.purple .digmkt {
+    background: #e6ccf5; /* Light Purple */
+}
+
+body.light.yellow .digmkt {
+    background: #fff3cd; /* Light Yellow */
+}
+
+/* Dark Mode Styles */
+body.dark .digmkt {
+    background: black;
+    color: #e0e0e0;
+}
+
+body.dark .digmkt > div:last-child {
+    background-color: rgba(34, 34, 34, 0.8);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .digmkt b {
+    color: #e0e0e0;
+}
+
+/* Dark Mode Variants */
+body.dark.blue .digmkt {
+    background: #001f3f; /* Dark Blue */
+}
+
+body.dark.green .digmkt {
+    background: #004d00; /* Dark Green */
+}
+
+body.dark.red .digmkt {
+    background: #660000; /* Dark Red */
+}
+
+body.dark.purple .digmkt {
+    background: #4B0082; /* Dark Purple */
+}
+
+body.dark.yellow .digmkt {
+    background: #7c7c00; /* Dark Yellow */
+}
+
+/* Shared Styles */
+.digmkt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.digmkt-vid {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.digmkt-vid video {
+    width: 100%;
+    display: block;
+}
+
+.digmkt > div:last-child {
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    animation: fadeIn 1s ease-out;
+}
+
+.digmkt p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    animation: slideIn 0.5s ease-out;
+}
+
+.digmkt b {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .digmkt {
+        padding: 1rem;
+    }
+
+    .digmkt-vid {
+        width: 95%;
+    }
+
+    .digmkt > div:last-child {
+        padding: 1.5rem;
+    }
+
+    .digmkt b {
+        font-size: 1.3rem;
+    }
+}
