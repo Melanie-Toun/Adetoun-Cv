@@ -63,7 +63,7 @@ function Contact() {
         <div className="row">
           <div className="contact-left">
             <h1 className="sub-title">Contact Me</h1>
-            <p><i className="fa-solid fa-paper-plane"></i>  Goodluckmelanie@gmail.com</p>
+            <p><i className="fa-solid fa-paper-plane"></i>  goodluckmelanie@gmail.com</p>
             <p><i className="fa-solid fa-phone"></i> 07392274401</p>
             <div className="social-icons">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
